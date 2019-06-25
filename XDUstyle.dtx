@@ -2,6 +2,7 @@
 % !TeX program  = XeLaTeX
 % !TeX encoding = UTF-8
 % 
+% Copyright (C) 2019 Xi Ruoyao
 % Copyright (C) 2015--2016 by Stick Cui <Stick_Cui@163.com>
 % 
 % This file may be distributed and/or modified under the
@@ -493,9 +494,9 @@ This package consists of the file  XDUstyle.dtx,
     \fi%
     \begin{minipage}[c][\textheight][c]{\beamer@plainpagewidth}
 	  \ifx\beamer@xducolor\beamer@xducolorblue%
-	    \includegraphics[width=4cm]{XDUtheme/logo_xdblue}%
+	    \includegraphics[width=8cm]{XDUtheme/logo_xdblue}%
 	  \else%
-	    \includegraphics[width=4cm]{XDUtheme/logo_xdred}%
+	    \includegraphics[width=8cm]{XDUtheme/logo_xdred}%
 	  \fi%
       \vfill
       \centering
@@ -527,9 +528,9 @@ This package consists of the file  XDUstyle.dtx,
     \fi%
     \begin{minipage}[c][\textheight][c]{\beamer@plainpagewidth}
 	\ifx\beamer@xducolor\beamer@xducolorblue%
-	    \includegraphics[width=4cm]{XDUtheme/logo_xdblue}%
+	    \includegraphics[width=8cm]{XDUtheme/logo_xdblue}%
 	  \else%
-	    \includegraphics[width=4cm]{XDUtheme/logo_xdred}%
+	    \includegraphics[width=8cm]{XDUtheme/logo_xdred}%
 	  \fi%
 	  \vfill
       \centering
@@ -579,18 +580,18 @@ This package consists of the file  XDUstyle.dtx,
     {}\vspace*{\baselineskip}%
 	\ifx\beamer@sidebar\undefined%
       \ifx\beamer@xducolor\beamer@xducolorblue%
-       \includegraphics[width=4cm]{XDUtheme/logo_xdblue}%
+       \includegraphics[width=8cm]{XDUtheme/logo_xdblue}%
       \else%
-       \includegraphics[width=4cm]{XDUtheme/logo_xdred}%
+       \includegraphics[width=8cm]{XDUtheme/logo_xdred}%
   	  \fi%
       \vspace*{-3\baselineskip}%
       \partpage
     \else%
       \hskip-1.6\beamer@height%
       \ifx\beamer@xducolor\beamer@xducolorblue%
-       \includegraphics[width=4cm]{XDUtheme/logo_xdblue}%
+       \includegraphics[width=8cm]{XDUtheme/logo_xdblue}%
       \else%
-       \includegraphics[width=4cm]{XDUtheme/logo_xdred}%
+       \includegraphics[width=8cm]{XDUtheme/logo_xdred}%
   	  \fi%
       \vspace*{-3\baselineskip}%
       \hskip-1.6\beamer@height%
@@ -657,7 +658,7 @@ This package consists of the file  XDUstyle.dtx,
 %width of vertical bar separating the main text from the sidebar
 \newlength{\beamer@barwidth}
 % the bar width depends on the header height (by a factor of 7.5)
-\setlength{\beamer@barwidth}{2\beamer@height/15} 
+\setlength{\beamer@barwidth}{2\beamer@height/15}
 %    \end{macrocode}
 % 特殊设置
 %    \begin{macrocode}
@@ -814,10 +815,10 @@ This package consists of the file  XDUstyle.dtx,
     
   
     \coordinate (UC) at (\paperwidth,0); %upper right corner of the slide
-    \coordinate (LC) at (3ex+3.4cm,-\paperheight); %lower left corner of the slide
+    \coordinate (LC) at (3ex+6.4cm,-\paperheight); %lower left corner of the slide
     \coordinate (BS) at (\paperwidth,-\beamer@height+1ex); %start coordinate of the bar
     \coordinate (BE) at (\beamer@width+\beamer@barwidth/2,-\paperheight); %end coordinate of the bar
-	\coordinate (BF) at (3ex+3.4cm,-\beamer@height);
+	\coordinate (BF) at (3ex+6.4cm,-\beamer@height);
 
     \coordinate (IS) at (BS -| BE); %intersection
 	
@@ -842,11 +843,11 @@ This package consists of the file  XDUstyle.dtx,
 	  \draw[draw=none,fill=frametitle.bg] (XDL5) rectangle (XDR5);
     }
     
-    \coordinate (logopos) at ([yshift=\beamer@height/2] IS);%coordinate of the logo
+    \coordinate (logopos) at ([xshift=1.5cm,yshift=\beamer@height/2] IS);%coordinate of the logo
 	\ifx\beamer@xducolor\beamer@xducolorblue%
-      \node at (logopos) {\includegraphics[width=3cm]{XDUtheme/logo_xdblue}};
+      \node at (logopos) {\includegraphics[width=6cm]{XDUtheme/logo_xdblue}};
 	\else%
-      \node at (logopos) {\includegraphics[width=3cm]{XDUtheme/logo_xdred}};
+      \node at (logopos) {\includegraphics[width=6cm]{XDUtheme/logo_xdred}};
 	\fi%
   \end{tikzpicture}%
   \tikzexternalenable
