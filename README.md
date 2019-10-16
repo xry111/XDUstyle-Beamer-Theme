@@ -1,11 +1,11 @@
-# 西安电子科技大学程序设计竞赛实训基地 Beamer 主题
+# 西安电子科技大学空间科学与技术学院 Beamer 主题
 ---
 XDU ICPC Style Beamer Theme
 ---
 
-本主题由[西安电子科技大学 Beamer 主题](https://github.com/StickCui/XDUstyle-Beamer-Theme)修改而成，主要在 Logo 中加入了程序设计竞赛基地字样和一个气球符号。气球符号修改自 [Noto Color Emoji 字体](https://github.com/googlefonts/noto-emoji) 中嵌入的 [SVG 文件](https://github.com/googlefonts/noto-emoji/blob/master/svg/emoji_u1f388.svg)。
+本主题由[西安电子科技大学 Beamer 主题](https://github.com/StickCui/XDUstyle-Beamer-Theme)修改而成，主要加入了空间院 logo。
 
-推荐使用本主题的蓝色版本（加入 `xdblue` 选项）。
+本主题目前只有蓝色版本可用（请加入 `xdblue` 选项）。
 
 下面是原始的 README.md 文件。
 
